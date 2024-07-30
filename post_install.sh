@@ -22,10 +22,10 @@ sysrc -f /etc/rc.conf redis_enable="YES"
 sysrc -f /etc/rc.conf fail2ban_enable="YES"
 
 # Start the service
-service nginx start 2>/dev/null
-service php-fpm start 2>/dev/null
-service mysql-server start 2> /dev/null
-service redis start 2>/dev/null
+service nginx start #2>/dev/null
+service php-fpm start #2>/dev/null
+service mysql-server start #2> /dev/null
+service redis start #2>/dev/null
 
 # https://docs.nextcloud.com/server/13/admin_manual/installation/installation_wizard.html do not use the same name for user and db
 USER="dbadmin"
