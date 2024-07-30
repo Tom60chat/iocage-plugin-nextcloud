@@ -1,14 +1,6 @@
 # Path to the root of your installation
 root /usr/local/www/nextcloud/;
 
-# HSTS settings
-# WARNING: Only add the preload option once you read about
-# the consequences in https://hstspreload.org/. This option
-# will add the domain to a hardcoded list that is shipped
-# in all major browsers and getting removed from this list
-# could take several months.
-#add_header Strict-Transport-Security "max-age=15768000; includeSubDomains; preload" always;
-
 # set max upload size and increase upload timeout:
 client_max_body_size 512M;
 client_body_timeout 300s;
