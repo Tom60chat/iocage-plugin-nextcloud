@@ -4,7 +4,7 @@ set -eu
 
 . load_env
 
-if [ "${ALLOW_INSECURE_ACCESS:-false}" = "false" ]
+if [ "${ALLOW_INSECURE_ACCESS:-true}" = "true" ]
 then
 	exit 0
 fi

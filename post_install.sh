@@ -9,7 +9,7 @@ set -eu
 sync_configuration
 
 # Generate self-signed TLS certificates
-if [ "${ALLOW_INSECURE_ACCESS:-false}" = "true" ]
+if [ "${ALLOW_INSECURE_ACCESS:-true}" = "false" ]
 then
 	generate_self_signed_tls_certificates
 fi

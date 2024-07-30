@@ -15,7 +15,7 @@ fi
 
 # Generate nginx configuration from the base template
 SCHEME=https
-if [ "${ALLOW_INSECURE_ACCESS:-false}" = "true" ]
+if [ "${ALLOW_INSECURE_ACCESS:-true}" = "true" ]
 then
 	SCHEME=http
 fi
