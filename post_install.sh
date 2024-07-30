@@ -9,7 +9,10 @@ set -eu
 sync_configuration
 
 # Generate self-signed TLS certificates
-generate_self_signed_tls_certificates
+if [ "${ALLOW_INSECURE_ACCESS:-false}" = "true" ]
+then
+	generate_self_signed_tls_certificates
+fi
 
 # Enable the necessary services
 sysrc -f /etc/rc.conf nginx_enable="YES"
