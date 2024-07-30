@@ -41,7 +41,7 @@ fastcgi_hide_header X-Powered-By;
 include mime.types;
 types {
     text/javascript mjs;
-application/wasm wasm;
+	application/wasm wasm;
 }
 
 # Specify how to handle directories -- specifying `/index.php$request_uri`
